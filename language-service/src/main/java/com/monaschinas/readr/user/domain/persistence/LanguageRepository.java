@@ -1,6 +1,6 @@
-package com.monaschinas.readr.platform.publishing.domain.persistence;
+package com.monaschinas.readr.user.domain.persistence;
 
-import com.monaschinas.readr.platform.publishing.domain.model.Language;
+import com.monaschinas.readr.user.domain.model.Language;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

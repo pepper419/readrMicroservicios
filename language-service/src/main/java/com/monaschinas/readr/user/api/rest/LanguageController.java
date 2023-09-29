@@ -1,10 +1,10 @@
-package com.monaschinas.readr.platform.publishing.api.rest;
+package com.monaschinas.readr.user.api.rest;
 
-import com.monaschinas.readr.platform.publishing.domain.service.LanguageService;
-import com.monaschinas.readr.platform.publishing.mapping.LanguageMapper;
-import com.monaschinas.readr.platform.publishing.resource.CreateLanguageResource;
-import com.monaschinas.readr.platform.publishing.resource.LanguageResource;
-import com.monaschinas.readr.platform.publishing.resource.UpdateLanguageResource;
+import com.monaschinas.readr.user.domain.service.LanguageService;
+import com.monaschinas.readr.user.mapping.LanguageMapper;
+import com.monaschinas.readr.user.resource.CreateLanguageResource;
+import com.monaschinas.readr.user.resource.LanguageResource;
+import com.monaschinas.readr.user.resource.UpdateLanguageResource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;

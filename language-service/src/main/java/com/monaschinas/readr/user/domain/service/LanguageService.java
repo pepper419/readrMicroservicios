@@ -1,6 +1,6 @@
-package com.monaschinas.readr.platform.publishing.domain.service;
+package com.monaschinas.readr.user.domain.service;
 
-import com.monaschinas.readr.platform.publishing.domain.model.Language;
+import com.monaschinas.readr.user.domain.model.Language;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;

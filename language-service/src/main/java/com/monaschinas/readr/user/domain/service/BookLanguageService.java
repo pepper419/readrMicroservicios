@@ -1,6 +1,6 @@
-package com.monaschinas.readr.platform.publishing.domain.service;
+package com.monaschinas.readr.user.domain.service;
 
-import com.monaschinas.readr.platform.publishing.domain.model.BookLanguage;
+import com.monaschinas.readr.user.domain.model.BookLanguage;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;

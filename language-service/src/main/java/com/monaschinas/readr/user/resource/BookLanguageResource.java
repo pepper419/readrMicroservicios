@@ -1,5 +1,6 @@
-package com.monaschinas.readr.platform.publishing.resource;
+package com.monaschinas.readr.user.resource;
 
+import com.monaschinas.readr.user.resource.LanguageResource;
 import lombok.*;
 
 @Getter
@@ -9,6 +10,6 @@ import lombok.*;
 @AllArgsConstructor
 public class BookLanguageResource {
     private Long id;
-    private BookResource book;
+    private Long bookId;
     private LanguageResource language;
 }

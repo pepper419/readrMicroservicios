@@ -1,9 +1,9 @@
-package com.monaschinas.readr.platform.publishing.api.rest;
+package com.monaschinas.readr.user.api.rest;
 
-import com.monaschinas.readr.platform.publishing.domain.service.BookLanguageService;
-import com.monaschinas.readr.platform.publishing.mapping.BookLanguageMapper;
-import com.monaschinas.readr.platform.publishing.resource.BookLanguageResource;
-import com.monaschinas.readr.platform.publishing.resource.CreateBookLanguageResource;
+import com.monaschinas.readr.user.domain.service.BookLanguageService;
+import com.monaschinas.readr.user.mapping.BookLanguageMapper;
+import com.monaschinas.readr.user.resource.BookLanguageResource;
+import com.monaschinas.readr.user.resource.CreateBookLanguageResource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;

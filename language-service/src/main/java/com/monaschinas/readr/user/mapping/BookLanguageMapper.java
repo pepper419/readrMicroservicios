@@ -1,13 +1,11 @@
-package com.monaschinas.readr.platform.publishing.mapping;
+package com.monaschinas.readr.user.mapping;
 
-import com.monaschinas.readr.platform.publishing.domain.model.Book;
-import com.monaschinas.readr.platform.publishing.domain.model.BookLanguage;
-import com.monaschinas.readr.platform.publishing.domain.model.Language;
-import com.monaschinas.readr.platform.publishing.domain.service.BookService;
-import com.monaschinas.readr.platform.publishing.domain.service.LanguageService;
-import com.monaschinas.readr.platform.publishing.resource.BookLanguageResource;
-import com.monaschinas.readr.platform.publishing.resource.CreateBookLanguageResource;
-import com.monaschinas.readr.platform.shared.mapping.EnhancedModelMapper;
+import com.monaschinas.readr.shared.mapping.EnhancedModelMapper;
+import com.monaschinas.readr.user.domain.model.BookLanguage;
+import com.monaschinas.readr.user.domain.model.Language;
+import com.monaschinas.readr.user.domain.service.LanguageService;
+import com.monaschinas.readr.user.resource.BookLanguageResource;
+import com.monaschinas.readr.user.resource.CreateBookLanguageResource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -21,9 +19,6 @@ public class BookLanguageMapper implements Serializable {
     private EnhancedModelMapper mapper;
 
     @Autowired
-    private BookService bookService; // Asumiendo que tienes un servicio para Book
-
-    @Autowired
     private LanguageService languageService; // Asumiendo que tienes un servicio para Language
 
     public BookLanguageResource toResource(BookLanguage model) {
@@ -34,11 +29,10 @@ public class BookLanguageMapper implements Serializable {
         BookLanguage bookLanguage = new BookLanguage();
 
         // Recupera las entidades completas basadas en los IDs
-        Book book = bookService.getById(resource.getBookId());
         Language language = languageService.getById(resource.getLanguageId());
 
         // Establece las relaciones en la entidad BookLanguage
-        bookLanguage.setBook(book);
+        bookLanguage.setBookId(resource.getBookId());
         bookLanguage.setLanguage(language);
 
         return bookLanguage;

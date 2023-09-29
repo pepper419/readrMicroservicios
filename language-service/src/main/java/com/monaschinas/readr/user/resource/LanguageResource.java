@@ -1,4 +1,4 @@
-package com.monaschinas.readr.platform.publishing.resource;
+package com.monaschinas.readr.user.resource;
 
 import lombok.*;
 

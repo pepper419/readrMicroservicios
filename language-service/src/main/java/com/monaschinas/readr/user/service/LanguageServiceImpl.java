@@ -1,11 +1,10 @@
-package com.monaschinas.readr.platform.publishing.service;
+package com.monaschinas.readr.user.service;
 
-import com.monaschinas.readr.platform.publishing.domain.model.Genre;
-import com.monaschinas.readr.platform.publishing.domain.model.Language;
-import com.monaschinas.readr.platform.publishing.domain.persistence.LanguageRepository;
-import com.monaschinas.readr.platform.publishing.domain.service.LanguageService;
-import com.monaschinas.readr.platform.shared.exception.ResourceNotFoundException;
-import com.monaschinas.readr.platform.shared.exception.ResourceValidationException;
+import com.monaschinas.readr.shared.exception.ResourceNotFoundException;
+import com.monaschinas.readr.shared.exception.ResourceValidationException;
+import com.monaschinas.readr.user.domain.model.Language;
+import com.monaschinas.readr.user.domain.persistence.LanguageRepository;
+import com.monaschinas.readr.user.domain.service.LanguageService;
 import jakarta.validation.ConstraintViolation;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

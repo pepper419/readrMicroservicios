@@ -1,4 +1,4 @@
-package com.monaschinas.readr.platform.publishing.domain.model;
+package com.monaschinas.readr.user.domain.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;

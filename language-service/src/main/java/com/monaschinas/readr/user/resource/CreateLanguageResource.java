@@ -1,4 +1,4 @@
-package com.monaschinas.readr.platform.publishing.resource;
+package com.monaschinas.readr.user.resource;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

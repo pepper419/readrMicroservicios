@@ -1,7 +1,8 @@
-package com.monaschinas.readr.platform.publishing.domain.model;
+package com.monaschinas.readr.user.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 @NoArgsConstructor
@@ -16,10 +17,8 @@ public class BookLanguage {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(fetch = FetchType.EAGER, optional = false)
-    @JoinColumn(name = "book_id", nullable = false)
-    @JsonIgnore
-    private Book book;
+    @NotNull
+    private Long bookId;
 
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "language_id", nullable = false)
