@@ -1,4 +1,14 @@
+package com.monaschinas.readr.book.api.rest;
 
+import com.monaschinas.readr.book.domain.service.BookService;
+import com.monaschinas.readr.book.mapping.BookMapper;
+import com.monaschinas.readr.book.resource.BookResource;
+import com.monaschinas.readr.book.resource.CreateBookResource;
+import com.monaschinas.readr.book.resource.UpdateBookResource;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/api/v1/publishing/books", produces = "application/json")
